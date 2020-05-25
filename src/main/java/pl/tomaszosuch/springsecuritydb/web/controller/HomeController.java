@@ -13,8 +13,7 @@ public class HomeController {
     }
 
     @RequestMapping("/secured")
-    @ResponseBody
     public String secured(){
-        return "secured page";
+        return "secured";
     }
 }

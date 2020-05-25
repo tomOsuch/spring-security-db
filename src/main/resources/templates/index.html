@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8"></meta>
     <title>Homepage</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
 </head>
 <body>
-<h1>Welcome in Spring security with user database</h1>
-<a href="#" th:href="@{/register}">Register</a>
-<a href="#" th:href="@{/secured}">Secret Page</a>
+<main role="main" class="container">
+    <div class="jumbotron jum-custom text-center">
+        <h1>Welcome in Spring security with user database</h1>
+    </div>
+</main>
+
+<div class="container">
+    <div class="col-sm-6 col-md-4 offset-4">
+        <a class="btn btn-primary" role="button" href="#" th:href="@{/register}">Register</a>
+        <a class="btn btn-primary" role="button" href="#" th:href="@{/secured}">Secret Page</a>
+    </div>
+</div>
+<script src="/js/bootstrap.js"></script>
 </body>
 </html>
